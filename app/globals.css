@@ -1,0 +1,25 @@
+/* Global styles for Wiki template */
+@import "highlight.js/styles/github.css";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.prose {
+  max-width: 65ch;
+}
+
+/* Optional code block tweaks */
+pre code {
+  display: block;
+  padding: 1rem;
+  overflow: auto;
+  border-radius: 6px;
+}
+
+/* Sidebar tweaks */
+aside {
+  background: #fbfbfb;
+}

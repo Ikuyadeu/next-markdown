@@ -1,0 +1,39 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Editor / OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc caches
+.cache/
+reports/
+
+# Keep the content/docs folder tracked (do NOT ignore it)
+# content/docs/
+
