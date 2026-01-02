@@ -30,7 +30,7 @@ import rehypeReact from 'rehype-react'
 
 コードハイライト:
 
-- `rehype-highlight` (highlight.js ベース) を導入して、コードブロックにシンタックスハイライトを追加しています。
+- `rehype-highlight`（highlight.js ベース）を導入して、コードブロックにシンタックスハイライトを追加しています。
 - ハイライト用 CSS は `app/globals.css` から `highlight.js` のテーマをインポートしています。別のテーマを使う場合は `app/globals.css` の `@import` を変更してください（例: `github-dark.css`、`atom-one-dark.css` など）。
 
 注意: グローバル CSS は `app/layout.tsx` で `globals.css` を読み込む形で設定しています。
@@ -41,13 +41,13 @@ import rehypeReact from 'rehype-react'
 3. `content/docs/<slug>.md` を作成すると `/wiki/<slug>` で閲覧・編集できます
 
 注意:
+
 - `app/api/wiki/[slug]/route.ts` は GET（読み取り）と POST（上書き保存）をサポートします。
 - 書き込みはサーバー上の `content/docs` ディレクトリに行われます。権限に注意してください。
 
-
 ## TODO
 
-- ナビゲーション（docs の一覧を読み出しサイドバー生成） — ナビゲーションを実装できます。
-- 保存操作の保護（簡易認証 / ミドルウェア） — 公開環境での安全対策。
-- Git での自動コミット（変更履歴を保持） — 継続的な編集履歴のため。
-- フルテキスト検索（Lunr / Fuse.js） — ドキュメント検索を追加。
+- ナビゲーション（docs の一覧を読み出しサイドバー生成 — ナビゲーションを実装できます。
+- 保存操作の保護（簡易認証 / ミドルウェア）— 公開環境での安全対策。
+- Git での自動コミット（変更履歴を保持）— 継続的な編集履歴のため。
+- フルテキスト検索（Lunr / Fuse.js）— ドキュメント検索を追加。
